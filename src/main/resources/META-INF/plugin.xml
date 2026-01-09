@@ -1,15 +1,74 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
-    <name>IntelliJ Platform Plugin Template</name>
-    <vendor>JetBrains</vendor>
+    <id>com.github.abdulaziz.hotfolder</id>
+    <name>Hot Folder</name>
+    <vendor email="support@example.com" url="https://github.com/abdulaziz/webstorm-hot-folder-plugin">Abdulaziz</vendor>
+
+    <!-- Plugin description -->
+    <description><![CDATA[
+    <p>Hot Folder plugin allows you to add shared folders from anywhere on your file system to your IDE workspace.</p>
+    
+    <h3>Features</h3>
+    <ul>
+      <li>Add multiple hot folders to your project</li>
+      <li>Dedicated tool window that can be positioned anywhere</li>
+      <li>Browse and navigate folder contents directly in the IDE</li>
+      <li>Automatic refresh when files change</li>
+      <li>Double-click to open files</li>
+      <li>Context menu with file operations (New, Copy, Paste, Delete, etc.)</li>
+      <li>Settings page to manage hot folders</li>
+    </ul>
+    
+    <h3>Use Cases</h3>
+    <ul>
+      <li>Share common libraries or resources between multiple projects</li>
+      <li>Quick access to frequently used external directories</li>
+      <li>Keep reference documentation or templates visible while working</li>
+      <li>Access shared team resources without copying them into each project</li>
+    </ul>
+    
+    <h3>How to Use</h3>
+    <ol>
+      <li>Open the Hot Folders tool window (usually on the right side)</li>
+      <li>Click the + button in the toolbar to add a folder</li>
+      <li>Browse and select the folder you want to add</li>
+      <li>The folder will appear in the tool window with all its contents</li>
+    </ol>
+    
+    <p>You can also manage hot folders via Settings → Tools → Hot Folders</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <h3>1.0.0</h3>
+    <ul>
+      <li>Initial release</li>
+      <li>Add multiple hot folders to your workspace</li>
+      <li>Dedicated tool window with tree view</li>
+      <li>Automatic file system watching and refresh</li>
+      <li>Full file operations support</li>
+      <li>Settings page for hot folder management</li>
+    </ul>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.HotFolderBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
+        <toolWindow id="Hot Folders"
+                    anchor="right"
+                    icon="/icons/hotFolder.svg"
+                    factoryClass="com.github.abdulaziz.hotfolder.toolWindow.HotFolderToolWindowFactory"/>
+        <projectConfigurable parentId="tools"
+                             instance="com.github.abdulaziz.hotfolder.settings.HotFolderConfigurable"
+                             id="com.github.abdulaziz.hotfolder.settings.HotFolderConfigurable"
+                             displayName="Hot Folders"/>
     </extensions>
+
+    <actions>
+        <action id="com.github.abdulaziz.hotfolder.actions.AddHotFolderAction"
+                class="com.github.abdulaziz.hotfolder.actions.AddHotFolderAction">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
