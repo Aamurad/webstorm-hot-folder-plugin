@@ -29,7 +29,7 @@ This plugin is perfect for sharing common libraries or resources between multipl
 
 ### Manual Installation
 
-1. Download the latest release from the [Releases](https://github.com/abdulaziz/webstorm-hot-folder-plugin/releases) page
+1. Download the latest release from the [Releases](https://github.com/aamurad/webstorm-hot-folder-plugin/releases) page
 2. Open your IDE
 3. Go to **Settings/Preferences** → **Plugins**
 4. Click the gear icon ⚙️ → **Install Plugin from Disk...**
