@@ -15,8 +15,10 @@ This plugin is perfect for sharing common libraries or resources between multipl
 - 🪟 **Dedicated Tool Window** - Movable tool window that can be positioned anywhere in your IDE
 - 🔄 **Automatic Refresh** - File system watching ensures your view is always up-to-date
 - 📂 **Full File Operations** - Create, copy, paste, delete files and folders
+- 🔀 **Drag-and-Drop Support** - Drag files between project view and hot folders seamlessly
 - ⚙️ **Settings Integration** - Manage hot folders via Settings → Tools → Hot Folders
 - 🎨 **Custom Icon** - Distinctive hot folder icon for easy identification
+- 🧹 **Clean View** - Automatically hides system files like .DS_Store
 
 ## Installation
 
@@ -63,6 +65,8 @@ This plugin is perfect for sharing common libraries or resources between multipl
 - **Refresh**: Click the refresh button to manually update the view
 - **Navigate**: Double-click any file to open it in the editor
 - **File operations**: Right-click on files/folders for context menu options
+- **Drag to hot folders**: Drag files from project view to hot folders to copy or move them
+- **Drag from hot folders**: Drag files from hot folders to project view (always creates a copy)
 
 ### Configuration
 
@@ -136,7 +140,7 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 If you encounter any issues or have suggestions:
 - Open an issue on [GitHub Issues](https://github.com/abdulaziz/webstorm-hot-folder-plugin/issues)
-- Contact: support@example.com
+- Contact: aamurad@hotmail.com
 
 ## Changelog
 

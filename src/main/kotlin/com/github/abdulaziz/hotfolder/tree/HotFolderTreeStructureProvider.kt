@@ -31,10 +31,26 @@ class HotFolderTreeStructureProvider : TreeStructureProvider {
         }
         
         // Replace PsiDirectoryNode children with HotFolderDirectoryNode if parent is a hot folder
-        // Keep all other nodes (like PsiFileNode) as-is to show files
+        // Keep all other nodes (like PsiFileNode) as-is to show files, but filter out .DS_Store
         if (parent is HotFoldersNode || parent is HotFolderDirectoryNode || isInsideHotFolder(parent, project)) {
             val newChildren = mutableListOf<AbstractTreeNode<*>>()
             for (child in children) {
+                // Filter out .DS_Store files
+                val virtualFile = when (child) {
+                    is PsiDirectoryNode -> child.virtualFile
+                    else -> (child as? AbstractTreeNode<*>)?.let { node ->
+                        // Try to get virtual file from the node's value
+                        when (val value = node.value) {
+                            is com.intellij.psi.PsiFile -> value.virtualFile
+                            else -> null
+                        }
+                    }
+                }
+                
+                if (virtualFile?.name == ".DS_Store") {
+                    continue // Skip .DS_Store files
+                }
+                
                 if (child is PsiDirectoryNode && child !is HotFolderDirectoryNode) {
                     val psiDir = child.value
                     if (psiDir != null) {
