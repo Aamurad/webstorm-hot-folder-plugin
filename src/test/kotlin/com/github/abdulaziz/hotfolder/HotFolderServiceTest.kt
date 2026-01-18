@@ -1,6 +1,6 @@
-package com.github.abdulaziz.hotfolder
+package com.github.aamurad.hotfolder
 
-import com.github.abdulaziz.hotfolder.services.HotFolderService
+import com.github.aamurad.hotfolder.services.HotFolderService
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 
 class HotFolderServiceTest : BasePlatformTestCase() {

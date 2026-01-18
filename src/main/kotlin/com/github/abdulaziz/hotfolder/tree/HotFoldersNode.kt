@@ -1,6 +1,6 @@
-package com.github.abdulaziz.hotfolder.tree
+package com.github.aamurad.hotfolder.tree
 
-import com.github.abdulaziz.hotfolder.services.HotFolderService
+import com.github.aamurad.hotfolder.services.HotFolderService
 import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.ViewSettings
 import com.intellij.ide.util.treeView.AbstractTreeNode

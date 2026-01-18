@@ -1,4 +1,4 @@
-package com.github.abdulaziz.hotfolder.services
+package com.github.aamurad.hotfolder.services
 
 import com.intellij.openapi.components.*
 import com.intellij.openapi.project.Project

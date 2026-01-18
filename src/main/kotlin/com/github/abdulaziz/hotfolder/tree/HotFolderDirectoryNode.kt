@@ -1,4 +1,4 @@
-package com.github.abdulaziz.hotfolder.tree
+package com.github.aamurad.hotfolder.tree
 
 import com.intellij.ide.projectView.ViewSettings
 import com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode

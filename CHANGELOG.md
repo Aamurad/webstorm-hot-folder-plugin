@@ -44,5 +44,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Keep reference documentation or templates visible while working
 - Access shared team resources without copying them into each project
 
-[Unreleased]: https://github.com/abdulaziz/webstorm-hot-folder-plugin/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/abdulaziz/webstorm-hot-folder-plugin/releases/tag/v1.0.0
+[Unreleased]: https://github.com/aamurad/webstorm-hot-folder-plugin/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/aamurad/webstorm-hot-folder-plugin/releases/tag/v1.0.0

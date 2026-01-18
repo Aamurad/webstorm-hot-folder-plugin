@@ -1,6 +1,6 @@
-package com.github.abdulaziz.hotfolder.settings
+package com.github.aamurad.hotfolder.settings
 
-import com.github.abdulaziz.hotfolder.services.HotFolderService
+import com.github.aamurad.hotfolder.services.HotFolderService
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory
 import com.intellij.openapi.options.BoundConfigurable
 import com.intellij.openapi.project.Project

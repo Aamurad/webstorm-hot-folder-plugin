@@ -1,6 +1,6 @@
-package com.github.abdulaziz.hotfolder.toolWindow
+package com.github.aamurad.hotfolder.toolWindow
 
-import com.github.abdulaziz.hotfolder.services.HotFolderService
+import com.github.aamurad.hotfolder.services.HotFolderService
 import com.intellij.openapi.actionSystem.*
 import com.intellij.openapi.fileChooser.FileChooser
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory

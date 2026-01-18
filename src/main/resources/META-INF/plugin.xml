@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.abdulaziz.hotfolder</id>
+    <id>com.github.aamurad.hotfolder</id>
     <name>Hot Folder</name>
-    <vendor email="support@example.com" url="https://github.com/abdulaziz/webstorm-hot-folder-plugin">Abdulaziz</vendor>
+    <vendor email="support@example.com" url="https://github.com/aamurad/webstorm-hot-folder-plugin">aamurad</vendor>
 
     <!-- Plugin description -->
     <description><![CDATA[
@@ -58,16 +58,16 @@
         <toolWindow id="Hot Folders"
                     anchor="right"
                     icon="/icons/hotFolder.svg"
-                    factoryClass="com.github.abdulaziz.hotfolder.toolWindow.HotFolderToolWindowFactory"/>
+                    factoryClass="com.github.aamurad.hotfolder.toolWindow.HotFolderToolWindowFactory"/>
         <projectConfigurable parentId="tools"
-                             instance="com.github.abdulaziz.hotfolder.settings.HotFolderConfigurable"
-                             id="com.github.abdulaziz.hotfolder.settings.HotFolderConfigurable"
+                             instance="com.github.aamurad.hotfolder.settings.HotFolderConfigurable"
+                             id="com.github.aamurad.hotfolder.settings.HotFolderConfigurable"
                              displayName="Hot Folders"/>
     </extensions>
 
     <actions>
-        <action id="com.github.abdulaziz.hotfolder.actions.AddHotFolderAction"
-                class="com.github.abdulaziz.hotfolder.actions.AddHotFolderAction">
+        <action id="com.github.aamurad.hotfolder.actions.AddHotFolderAction"
+                class="com.github.aamurad.hotfolder.actions.AddHotFolderAction">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
     </actions>

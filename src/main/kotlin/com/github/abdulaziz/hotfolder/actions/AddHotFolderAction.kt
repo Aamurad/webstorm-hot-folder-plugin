@@ -1,6 +1,6 @@
-package com.github.abdulaziz.hotfolder.actions
+package com.github.aamurad.hotfolder.actions
 
-import com.github.abdulaziz.hotfolder.services.HotFolderService
+import com.github.aamurad.hotfolder.services.HotFolderService
 import com.intellij.ide.projectView.ProjectView
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent

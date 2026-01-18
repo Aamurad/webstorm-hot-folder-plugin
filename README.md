@@ -1,6 +1,6 @@
 # Hot Folder Plugin
 
-[![Build](https://github.com/abdulaziz/webstorm-hot-folder-plugin/workflows/Build/badge.svg)](https://github.com/abdulaziz/webstorm-hot-folder-plugin/actions)
+[![Build](https://github.com/aamurad/webstorm-hot-folder-plugin/workflows/Build/badge.svg)](https://github.com/aamurad/webstorm-hot-folder-plugin/actions)
 
 <!-- Plugin description -->
 **Hot Folder** plugin allows you to add shared folders from anywhere on your file system to your IDE workspace.
@@ -106,7 +106,7 @@ This plugin is compatible with all IntelliJ Platform-based IDEs:
 
 ```bash
 # Clone the repository
-git clone https://github.com/abdulaziz/webstorm-hot-folder-plugin.git
+git clone https://github.com/aamurad/webstorm-hot-folder-plugin.git
 cd webstorm-hot-folder-plugin
 
 # Build the plugin
@@ -134,12 +134,20 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
+This is a **commercial plugin** available through the JetBrains Marketplace on a subscription basis.
+
+By using this plugin, you agree to the [End User License Agreement (EULA)](LICENSE).
+
+### Subscription
+
+- The plugin requires an active subscription purchased through the JetBrains Marketplace
+- Subscription options include monthly and yearly plans
+- A free trial period may be available for new users
 
 ## Support
 
 If you encounter any issues or have suggestions:
-- Open an issue on [GitHub Issues](https://github.com/abdulaziz/webstorm-hot-folder-plugin/issues)
+- Open an issue on [GitHub Issues](https://github.com/aamurad/webstorm-hot-folder-plugin/issues)
 - Contact: aamurad@hotmail.com
 
 ## Changelog
